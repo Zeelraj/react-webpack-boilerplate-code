@@ -12,7 +12,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    port: 3030, // you can change the port
+    port: 4000, // you can change the port
   },
   module: {
     rules: [
@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/, // styles files
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
